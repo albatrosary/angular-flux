@@ -1,0 +1,9 @@
+<table>
+    <tr ng-repeat="item in catalog.catalogItems">
+        <td>{{item.title}}</td>
+        <td>{{item.cost}}</td>
+        <td>
+            <button ng-click="catalog.addToCart(item)">Add to Cart</button>
+        </td>
+    </tr>
+</table>
